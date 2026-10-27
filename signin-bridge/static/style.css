@@ -1,0 +1,52 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+body {
+  margin: 0;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+main {
+  max-width: 26rem;
+  padding: 1.5rem;
+}
+h1 {
+  font-size: 1.4rem;
+}
+.wallets {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font: inherit;
+  border-radius: 0.5rem;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+button.secondary {
+  border-color: transparent;
+  opacity: 0.8;
+}
+.status.error {
+  color: #c62828;
+}

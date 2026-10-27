@@ -261,7 +261,7 @@ and add it as a provider like any other.
 | Method | Adapter |
 |---|---|
 | GitHub, Discord | A connector in [Dex](https://dexidp.io), which turns their OAuth 2 into OIDC. Keycloak and Authentik can do the same as identity brokers |
-| Ethereum wallets (SIWE) | A SIWE-to-OIDC bridge: the wallet signs a SIWE message, the bridge checks it and issues an id_token whose `sub` is the address |
+| Ethereum wallets (SIWE) | A SIWE-to-OIDC bridge: the wallet signs a SIWE message, the bridge checks it and issues an id_token whose `sub` is the address. This repository has one in `signin-bridge/` (its README covers the container, the proxy route and the provider object) |
 | Anything custom | Any server that issues a signed id_token for a stable subject |
 
 An adapter becomes an **identity authority for your PDS**: whatever it signs in as, vlpds believes.

@@ -16,7 +16,7 @@ autotests = false
 # bench/results holds standalone harnesses. deps/ is where the monorepo's
 # Docker build context (build/context.sh) carries vlsync and vlatproto.
 [workspace]
-exclude = ["bench", "checker-rs", "passkey-differential", "deps"]
+exclude = ["bench", "checker-rs", "passkey-differential", "signin-bridge", "deps"]
 
 [features]
 default = ["jemalloc", "slatedb-metrics"]

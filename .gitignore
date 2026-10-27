@@ -17,6 +17,7 @@ __pycache__/
 /bench/spaces/.scratch/
 /bench/spaces/node_modules/
 /passkey-differential/target/
+/signin-bridge/target/
 .DS_Store
 /bench/account-spaces/out/
 /bench/account-spaces/node_modules/
